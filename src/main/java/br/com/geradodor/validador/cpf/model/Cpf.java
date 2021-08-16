@@ -57,6 +57,9 @@ public class Cpf implements Serializable {
 
 	}
 
+	//OBS: Esse método aceita o cpf somente sem maskara!
+	//No end points é retornado o cpf com maskara.
+	//Faça a validação no front para que o método receba somente os números.
 	public static boolean validador(String cpf) {
 
 		if (cpf.equals("00000000000") | cpf.equals("11111111111") | cpf.equals("22222222222")
