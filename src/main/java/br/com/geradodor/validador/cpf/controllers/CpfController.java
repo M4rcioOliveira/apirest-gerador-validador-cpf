@@ -1,5 +1,6 @@
 package br.com.geradodor.validador.cpf.controllers;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,6 +10,7 @@ import br.com.geradodor.validador.cpf.model.Cpf;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "*")
 public class CpfController {
 
 
